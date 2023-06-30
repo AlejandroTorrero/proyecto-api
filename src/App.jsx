@@ -1,5 +1,5 @@
-import { useEffect, useState } from "react"
-import axios from "axios"
+
+
 import "./App.css"
 import Criptogrid from "./components/criptoGrid/Criptogrid"
 
@@ -34,11 +34,7 @@ function App() {
   )
 
 
-/*   if (!cripto) return (
-    <>
-      <span> Cargando... </span>
-    </>
-  )
+/*   
 
   return (
     <>
