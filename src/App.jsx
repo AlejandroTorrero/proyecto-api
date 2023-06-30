@@ -1,13 +1,7 @@
-
-
 import "./App.css"
 import Criptogrid from "./components/criptoGrid/Criptogrid"
 
 function App() {
-
-  
-
-  
 
   /*  useEffect(() => {
      fetch(`${API_URL}assets`)

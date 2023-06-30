@@ -35,11 +35,13 @@ const Criptogrid = () => {
       <br></br>
       <div className="grid">
         {
-          cripto.map(({ id, name, priceUsd }) => (
+          cripto.map(({id,symbol, name, priceUsd,changePercent24Hr}) => (
             <Criptocard
+              key = {id}
               nombre={name}
-              codigo={id}
+              codigo={symbol}
               valor={priceUsd}
+              change={changePercent24Hr}
             />
           ))
         }
