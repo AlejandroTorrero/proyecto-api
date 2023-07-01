@@ -1,5 +1,6 @@
 import "./App.css"
-import Criptogrid from "./components/criptoGrid/Criptogrid"
+import Menu from "./menu/menu"
+import {Outlet} from "react-router-dom"
 
 function App() {
 
@@ -19,31 +20,30 @@ function App() {
    }, []) */
 
 
-
-  return(
-
+  return (
     <>
-      <Criptogrid />
+      <Menu />
+      <Outlet />      
     </>
   )
 
 
-/*   
-
-  return (
-    <>
-      <h1>Lista de criptomonedas</h1>
-
-      <ol>
-        {
-          cripto.map(({ id, name, priceUsd }) => (
-            <li key={id}>Nombre: {name} --- Precio: {priceUsd}</li>
-          ))
-        }
-      </ol>
-
-    </>
-  ) */
+  /*   
+  
+    return (
+      <>
+        <h1>Lista de criptomonedas</h1>
+  
+        <ol>
+          {
+            cripto.map(({ id, name, priceUsd }) => (
+              <li key={id}>Nombre: {name} --- Precio: {priceUsd}</li>
+            ))
+          }
+        </ol>
+  
+      </>
+    ) */
 }
 
 export default App

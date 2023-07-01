@@ -23,7 +23,10 @@ const Criptogrid = () => {
 
   if (!cripto) return (
     <>
-      <span> Cargando... </span>
+      <div className="laoding">
+        <span> Cargando... </span>
+      </div>
+
     </>
   )
 
@@ -32,12 +35,12 @@ const Criptogrid = () => {
       <div className="title">
         <h1>Criptomonedas</h1>
       </div>
-      <br></br>
       <div className="grid">
         {
-          cripto.map(({id,symbol, name, priceUsd,changePercent24Hr}) => (
+          cripto.map(({ id, symbol, name, priceUsd, changePercent24Hr }) => (
             <Criptocard
-              key = {id}
+              key={id}
+              id={id}
               nombre={name}
               codigo={symbol}
               valor={priceUsd}

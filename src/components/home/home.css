@@ -1,0 +1,19 @@
+.welcome-container{
+    display: flex;    
+    justify-content: center;    
+}
+
+.info{
+    margin-top: 10%;
+    text-align: center;
+}
+
+.btn-label{        
+    background-color: rgb(44, 95, 112);    
+    border-radius: 5px;
+    padding: 10px;    
+}
+
+.btn-label:hover{    
+    background-color: rgb(62, 135, 159);  
+}
