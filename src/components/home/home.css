@@ -1,17 +1,23 @@
 .welcome-container{
     display: flex;    
-    justify-content: center;    
+    justify-content: center;     
+    height: 91.7vh;
+    background: rgb(17,53,72);
+    background: linear-gradient(180deg, rgba(17,53,72,1) 0%, rgba(12,49,69,1) 50%, rgba(0,212,255,1) 100%);     
 }
 
 .info{
     margin-top: 10%;
     text-align: center;
+    background: none;
 }
 
-.btn-label{        
+
+.info .btn-label{        
     background-color: rgb(44, 95, 112);    
     border-radius: 5px;
     padding: 10px;    
+
 }
 
 .btn-label:hover{    

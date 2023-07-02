@@ -1,5 +1,5 @@
 import "./App.css"
-import Menu from "./menu/menu"
+import Menu from "./menu/Menu"
 import {Outlet} from "react-router-dom"
 
 function App() {

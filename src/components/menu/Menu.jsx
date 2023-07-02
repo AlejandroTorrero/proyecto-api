@@ -3,12 +3,15 @@ import "./menu.css"
 
 const Menu = ()=>{
     return (
+        <>
         <nav className="main-menu">
             <ul>
-                <li><NavLink to="/">Inicio</NavLink></li>
-                <li><NavLink to="/Saludo">--</NavLink></li>                
-            </ul>
-        </nav>        
+                <li><NavLink to="/">Inicio</NavLink></li>                
+                <li><NavLink to="/Criptomonedas">Lista de criptos</NavLink></li>              
+            </ul>                                   
+        </nav>           
+        <hr  width="92%" />
+        </>  
     )
 }
 

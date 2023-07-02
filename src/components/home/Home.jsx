@@ -7,6 +7,7 @@ const Home = () => {
             <div className="welcome-container">
                 <div className="info">
                     <h1>Hola, bienvenido a Torrero Industries</h1>
+                    <br />
                     <p>Conoce las 100 criptos más usadas</p>
                     <br />
                     <Link to="/Criptomonedas"><span className="btn-label">Ver listado</span></Link>

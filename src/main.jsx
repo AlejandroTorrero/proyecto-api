@@ -6,6 +6,7 @@ import Pagina404 from './components/Pagina404.jsx'
 import Criptogrid from "./components/criptoGrid/Criptogrid.jsx"
 import Home from './components/home/Home.jsx'
 import CriptoPage from './components/criptoPage/CriptoPage.jsx'
+import "./main.css"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <>
