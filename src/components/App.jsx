@@ -1,8 +1,11 @@
 import "./App.css"
 import Menu from "./menu/Menu"
 import {Outlet} from "react-router-dom"
+import { Navigate } from "react-router-dom"
 
 function App() {
+
+  if(!localStorage.getItem("tokenTI"))return <Navigate to="/login" />
 
   /*  useEffect(() => {
      fetch(`${API_URL}assets`)

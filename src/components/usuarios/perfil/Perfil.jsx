@@ -1,16 +1,12 @@
+import { useContext } from "react"
 import "./perfil.css"
-import { useState,useEffect } from "react"
+import { UserContext } from "../../../context/userContext"
 
 
 const Perfil = () => {
-    const [usuario,setUsuario] = useState({})
 
-    useEffect(()=>{
-        setUsuario({
-            nombre:"Diego Torrero",
-            registered:"15/Agosto/2022"
-        })
-    },[])
+    const usuario = useContext(UserContext)
+
     return (
         <>
         <div className="perfil-container">
