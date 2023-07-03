@@ -7,14 +7,17 @@ import Criptogrid from "./components/criptoGrid/Criptogrid.jsx"
 import Home from './components/home/Home.jsx'
 import CriptoPage from './components/criptoPage/CriptoPage.jsx'
 import "./main.css"
+import Perfil from './components/perfil/Perfil.jsx'
+import { UserContextProvider } from './context/userContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     <>
-
+        <UserContextProvider> 
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<App />}>      {/* Ruta principal */}
                     <Route index element={<Home />} />
+                    <Route path="perfil" element={<Perfil />} />
                 </Route>
                 <Route path='/Criptomonedas' element={<App />}>
                     <Route index element={<Criptogrid />} />        
@@ -23,6 +26,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                 <Route path='*' element={<Pagina404 />} />
             </Routes>
         </BrowserRouter>
+        </UserContextProvider>
+       
     </>
 
 
